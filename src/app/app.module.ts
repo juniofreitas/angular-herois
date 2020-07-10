@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HeroisComponent } from './herois/herois.component';
-import { HeroiDetalheComponent } from './heroi-detalhe/heroi-detalhe.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetalheComponent } from './hero-detalhe/hero-detalhe.component';
 import { MensagensComponent } from './mensagens/mensagens.component';
 import { AppRotaModule } from './app-rota.module';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,8 +21,8 @@ import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroisComponent,
-    HeroiDetalheComponent,
+    HeroesComponent,
+    HeroDetalheComponent,
     MensagensComponent,
     NavbarComponent,
     DashboardComponent,

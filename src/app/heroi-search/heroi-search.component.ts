@@ -10,7 +10,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/Operators';
     <app-search-input (search)="onSearch($event)"></app-search-input>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let h of herois$ | async">
-        <a routerLink="/herois/{{ h.id }}">
+        <a routerLink="/heroes/{{ h.id }}">
           {{ h.nome }}
         </a>
       </li>

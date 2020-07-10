@@ -8,7 +8,7 @@ import { Heroi } from './heroi.model';
 export class InMemoryDataService implements InMemoryDbService{
 
   createDb(){
-    const herois: Heroi[] = [
+    const heroes: Heroi[] = [
       {id: 1, nome: 'Hulk'},
       {id: 2, nome: 'Homem-aranha'},
       {id: 3, nome: 'Super-homem'},
@@ -18,7 +18,7 @@ export class InMemoryDataService implements InMemoryDbService{
       {id: 7, nome: 'Thor'}
     ];
 
-    return { herois};
+    return { heroes};
   }
 
   genId(hs: Heroi[]): number{

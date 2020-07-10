@@ -4,11 +4,11 @@ import { HeroiService } from '../heroi.service';
 
 @Component({
   selector: 'app-herois',
-  templateUrl: './herois.component.html',
-  styleUrls: ['./herois.component.css']
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
 })
 
-export class HeroisComponent implements OnInit {
+export class HeroesComponent implements OnInit {
   herois: Heroi[];
 
   filter = '';

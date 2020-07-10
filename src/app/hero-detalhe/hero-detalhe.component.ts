@@ -5,11 +5,11 @@ import { HeroiService} from '../heroi.service';
 import {Location} from '@angular/common';
 
 @Component({
-  selector: 'app-heroi-detalhe',
-  templateUrl: './heroi-detalhe.component.html',
-  styleUrls: ['./heroi-detalhe.component.css']
+  selector: 'app-hero-detalhe',
+  templateUrl: './hero-detalhe.component.html',
+  styleUrls: ['./hero-detalhe.component.css']
 })
-export class HeroiDetalheComponent implements OnInit {
+export class HeroDetalheComponent implements OnInit {
   @Input() heroi: Heroi;
 
   constructor(
