@@ -1,16 +1,16 @@
 <div class="form-group form-inline">
-  <label for="nome" >Nome Herói</label>
+  <label for="name" >name Herói</label>
   <input
     type="text"
     class="form-control ml-3"
-    id="nome"
-    [(ngModel)]="heroiNome"
+    id="name"
+    [(ngModel)]="heroiName"
   />
 
   <button
     class="btn btn-primary"
     type="button"
-    [disabled]="!heroiNome.trim()"
+    [disabled]="!heroiName.trim()"
     (click)="onAdd()"
   >
     Add

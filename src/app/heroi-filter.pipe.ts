@@ -7,12 +7,12 @@ import { Heroi } from './heroi.model';
 export class HeroiFilterPipe implements PipeTransform {
 
   transform(herois: Heroi[], filter: string): Heroi[] {
-    const nome = filter.trim().toLocaleLowerCase();
-    if(!nome){
+    const name = filter.trim().toLocaleLowerCase();
+    if(!name){
       return herois;
     }
     return herois.filter(
-      heroi => heroi.nome.toLocaleLowerCase().indexOf(nome) !== -1
+      heroi => heroi.name.toLocaleLowerCase().indexOf(name) !== -1
     );
   }
 

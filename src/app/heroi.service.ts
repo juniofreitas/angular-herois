@@ -69,7 +69,7 @@ export class HeroiService {
     }
 
     return this.http
-      .get<Heroi[]>(`${this.heroisUrl}/?nome=${term}`, this.httpOptions)
+      .get<Heroi[]>(`${this.heroisUrl}/?name=${term}`, this.httpOptions)
       .pipe(
         tap((herois) =>
           herois && herois.length

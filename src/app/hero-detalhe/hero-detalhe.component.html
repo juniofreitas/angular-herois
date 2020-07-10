@@ -1,5 +1,5 @@
 <div *ngIf="heroi">
-  <h2>{{ heroi.nome | uppercase }} Detalhe</h2>
+  <h2>{{ heroi.name | uppercase }} Detalhe</h2>
 
   <div class="card">
     <div class="card-body">
@@ -14,20 +14,20 @@
       </div>
 
       <div class="form-group">
-        <label for="nome">Nome</label>
+        <label for="name">Name</label>
         <input
           type="text"
           class="form-control"
-          id="nome"
-          placeholder="nome"
-          [(ngModel)]="heroi.nome"
+          id="name"
+          placeholder="name"
+          [(ngModel)]="heroi.name"
         />
       </div>
 
       <button
         class="btn btn-primary mr-3"
         type="button"
-        [disabled]="!heroi.nome.trim()"
+        [disabled]="!heroi.name.trim()"
         (click)="save()"
       >
         Salva

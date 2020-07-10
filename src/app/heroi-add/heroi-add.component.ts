@@ -6,14 +6,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./heroi-add.component.css']
 })
 export class HeroiAddComponent  {
-  heroiNome: string = '';
+  heroiName: string = '';
 
   @Output() add = new EventEmitter<string>();
 
   constructor() { }
 
   onAdd(): void{
-    this.add.emit(this.heroiNome);
-    this.heroiNome = '';
+    this.add.emit(this.heroiName);
+    this.heroiName = '';
   }
 }

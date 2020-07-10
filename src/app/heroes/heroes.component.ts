@@ -25,8 +25,8 @@ export class HeroesComponent implements OnInit {
     //this.herois = this.hService.getHerois();
   }
 
-  onAdd(nome: string): void{
-    this.hService.addHeroi( {nome} as Heroi).subscribe((heroi) => {
+  onAdd(name: string): void{
+    this.hService.addHeroi( {name} as Heroi).subscribe((heroi) => {
         if(heroi) {
           this.herois.push(heroi);
         }

@@ -11,7 +11,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/Operators';
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let h of herois$ | async">
         <a routerLink="/heroes/{{ h.id }}">
-          {{ h.nome }}
+          {{ h.name }}
         </a>
       </li>
     </ul>
