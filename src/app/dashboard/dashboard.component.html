@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="col" *ngFor="let h of herois | slice: 1:5">
-    <a routerLink="/herois/{{ h.id }}">
+    <a routerLink="/heroes/{{ h.id }}">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{{h.nome | uppercase}}</h5>

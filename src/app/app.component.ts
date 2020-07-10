@@ -10,7 +10,7 @@ export class AppComponent {
 
   navItems: { path: string; text: string }[] = [
     { path: '/dashboard', text: 'Dashboard' },
-    { path: '/herois', text: 'Heróis' },
+    { path: '/heroes', text: 'Heróis' },
   ];
 
   constructor(){

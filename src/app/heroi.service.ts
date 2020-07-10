@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HeroiService {
 
-  private heroisUrl = `${environment.baseUrl}/herois`;
+  private heroisUrl = `${environment.baseUrl}/heroes`;
 
   private httpOptions = {
     headers: new HttpHeaders({
