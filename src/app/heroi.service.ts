@@ -16,7 +16,7 @@ export class HeroiService {
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      Authorization: localStorage.getItem('token')
+      Authorization: localStorage.getItem('token'),
     })
   };
 
@@ -32,7 +32,8 @@ export class HeroiService {
   }
 
   getHeroi(id: number): Observable<Heroi>{
-    return this.http.get<Heroi>(this.heroisUrl+"/"+id).pipe(
+
+    return this.http.get<Heroi>(this.heroisUrl+"/"+id, this.httpOptions).pipe(
       tap(() => this.log("obtido herói de id" + id)),
       catchError(this.handleError<Heroi>('getHerois', ))
     );
