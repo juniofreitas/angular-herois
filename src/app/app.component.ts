@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'curso-angular-basico';
+  title = 'Lista de Heróis';
+
+  navItems: { path: string; text: string }[] = [
+    { path: '/dashboard', text: 'Dashboard' },
+    { path: '/herois', text: 'Heróis' },
+  ];
+
+  constructor(){
+    const token = localStorage.getItem('token');
+
+    if(!token){
+      const randomToken = Math.random().toString(36).substring(-10);
+      localStorage.setItem('token', randomToken);
+    }
+  }
 }

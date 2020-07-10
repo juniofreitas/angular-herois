@@ -1,0 +1,42 @@
+<div *ngIf="heroi">
+  <h2>{{ heroi.nome | uppercase }} Detalhe</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <label>ID</label>
+        <input
+          type="text"
+          class="form-control"
+          readonly
+          value="{{ heroi.id }}"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          placeholder="nome"
+          [(ngModel)]="heroi.nome"
+        />
+      </div>
+
+      <button
+        class="btn btn-primary mr-3"
+        type="button"
+        [disabled]="!heroi.nome.trim()"
+        (click)="save()"
+      >
+        Salva
+      </button>
+
+      <button class="btn btn-secondary" type="button" (click)="goBack()">
+        Back
+      </button>
+
+    </div>
+  </div>
+</div>

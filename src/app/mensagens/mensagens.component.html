@@ -1,0 +1,13 @@
+<div *ngIf="mensagemService.getMensagens().length">
+  <h2>Mensagens</h2>
+
+  <button class="btn btn-secondary mb-3" (click)="mensagemService.clear()">
+    Limpar
+  </button>
+
+  <div *ngFor="let m of mensagemService.getMensagens()">
+    <div class="alert alert-success" role="alert">
+      {{m}}
+    </div>
+  </div>
+</div>
